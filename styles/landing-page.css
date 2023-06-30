@@ -1,0 +1,266 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  border: 2rem solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.form-btn {
+  width: 100%;
+  text-align: center;
+}
+.form-btn:hover{
+  background:black;
+}
+html::-webkit-scrollbar {
+  width:1rem;
+  
+ }
+
+ html::-webkit-scrollbar-track {
+background:transparent;
+ }
+
+ html::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+background:transparent;
+ }
+
+ .login-form {
+  animation: fadeIn 1s ease-in-out;
+ }
+ /*
+body{
+  height: 300rem;
+} */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 2rem 9%;
+  position: fixed;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.1);
+  top: 70px;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(-10rem);
+  /* height: 40%; */
+}
+.header {
+  height:100px;
+  transition: 0.3s ease;
+}
+
+.header.active {
+  transform: translateY(0rem);
+}
+
+
+
+.logo{
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bolder;
+
+}
+
+i{
+  color:aqua
+}
+
+.navbar a{
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: rgb(17, 176, 230);
+}
+.navbar a:hover{
+  color: chocolate;
+}
+.icons, .fa-bars, .fa-user a{
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: black;
+  cursor: pointer;
+} 
+.icons, .fa-bars, .fa-user, a:hover{
+  color: brown;
+}
+
+#menu-btn{
+  display: none;
+}
+
+.login-form{
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  width: 35rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.1);
+  padding: 2rem;
+}
+.login-form:active{
+  display: block;
+  animation: fadeIn .4s linear;
+}
+h3{
+  color: black;
+  font-size:2.5rem;
+  padding-bottom: .5rem;
+}
+.box{
+  width: 100%;
+  border-radius: 2rem solid black;
+  border-width: .1rem;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  color: black;
+  text-transform: none;
+  margin:1rem 0;
+}
+.remember{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem 0;
+}
+
+ label{
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: lightblue;
+ }
+ .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  cursor: pointer;
+  border: 1rem solid black;
+  background: none;
+  color: black;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+ }
+ .btn:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:black;
+  z-index: -1;
+  transition: .2s linear;
+  clip-path: circle(0% at 0% 5%);
+ }
+ .btn:hover::before{
+  clip-path: circle(100%);
+ }
+ .btn:hover{
+  color: white;
+ }
+ .btn {
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem ;
+}
+a{
+  font-size: 1.4rem;
+  color:coral;
+
+}
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.home{
+  margin-block-start: 15rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images);
+  background-position: center;
+  background-size: cover;
+ }
+  
+
+
+
+
+ /* media queries */
+@media (max-width:991px){
+ html{
+  font-size: 55%;
+ } 
+.header{
+  padding: 2rem;
+}
+}
+@media (max-width:768px){
+#menu-btn {
+  display: inline-block;
+}
+ .header .navbar{
+  position: absolute;
+   top: 70%;
+   left: 0;
+   right: 0;
+   background: white;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.header .navbar:active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+ a {
+  display: block;
+  margin: 2rem;
+  font-size: 2rem;
+
+ }
+ } 
+
+@media (max-width:450px){
+  html{
+   font-size: 50%;
+  } 
+  .header .navbar{
+    width: 90%;
+  }
+ }
