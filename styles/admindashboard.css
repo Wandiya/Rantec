@@ -112,6 +112,18 @@ font-weight: 400;
   object-fit: cover;
   border-radius: 50%;
 }
+.n1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#menu-btn{
+  color: #2b2b2b;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
 .i-name{
   color:#444a53;
   padding: 30px 30px 0 30px;
@@ -171,8 +183,8 @@ background: #74daec;
   overflow: auto;
   background: #fff;
   border-radius: 8px;
-
 }
+
 .board img{
   width: 45px;
   height: 45px;
@@ -226,5 +238,45 @@ tbody tr td {
   font-size: 14px;
   color: #554cd1;
   font-weight: 600;
+}
+
+@media (max-width:769px){
+  #menu{
+    width: 270px;
+    height: 100%; 
+    position: fixed;
+    left: -270px;
+  }
+  #menu.active{
+    left: 0px;
+  }
+  #menu-btn{
+    display: initial;
+  }
+  #interface{
+    width: 100%;
+    margin-left: 0px;
+    display: inline-block; 
+  }
+  #interface .navigation{
+    width: 100%;
+  }
+  .values{
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+  }
+  .values .val-box{
+    padding: 16px 20px;
+    margin: 10px 20px 10px 0;
+  }
+  .board{
+    width: 92%;
+    overflow-x: auto;
+    padding: 0;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
 }
 

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="styles/admindashboard.css" />
+<!-- Jquery link  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
 <section id="menu">
@@ -50,7 +52,7 @@
     <li>
       <i class="fas fa-hamburger"></i><a href="#">modal</a>
     </li>
-    
+
     <li>
       <i class="fas fa-chart-line"></i><a href="#">Blank</a>
     </li>
@@ -59,6 +61,9 @@
   <section id="interface">
     <div class="navigation">
       <div class="n1">
+        <div>
+          <i  id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
         <div class="search">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="search">
@@ -270,5 +275,6 @@
     </table>
   </div>
   </section>
+  <script src="scripts/admin.js"></script>
 </body>
 </html>
