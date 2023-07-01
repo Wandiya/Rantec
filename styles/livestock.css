@@ -143,8 +143,8 @@ font-weight: 400;
   /* flex-direction: row; */
 }
 .values .val-box{
-  background: #fff;
-  width: 235px;
+  background: hsl(0, 0%, 100%);
+  /* width: 235px; */
   padding: 16px 20px;
   border-radius: 5px;
   display: flex;
