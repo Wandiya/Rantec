@@ -125,7 +125,20 @@ i{
 .login-form:active{
   display: block;
   animation: fadeIn .4s linear;
+} 
+.btn {
+  color: white;
+  border-color: white;
 }
+
+.btn:hover {
+  color: black;
+}
+
+.btn:before {
+  background: white;
+}
+
 h3{
   color: black;
   font-size:2.5rem;
@@ -187,7 +200,7 @@ h3{
   color: white;
  }
  .btn {
-  width: 100%;
+  width: 30%;
   text-align: center;
   margin: 1.5rem 0;
 }
@@ -214,15 +227,14 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./images);
+  background: url(../images/landing-img/cowshed.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
+
  }
-  
 
-
-
-
+ 
  /* media queries */
 @media (max-width:991px){
  html{
@@ -264,3 +276,81 @@ a:hover{
     width: 90%;
   }
  }
+ section{
+  padding:5rem 2rem;
+
+ }
+  .home .content h3{
+    font-size: 6rem;
+    color: white;
+    padding-bottom: 1rem;
+  }
+  span{
+    color:chocolate;
+  }
+
+  .about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .about .image{
+    flex: 1 1 40rem;
+  }
+  .about img{
+    width: 100%;
+  }
+  .content{
+    flex: 1 1 40rem;
+  }
+.content h3{
+  color:black;
+  font-size: 4rem;
+}
+.content span{
+  color: brown;
+}
+.content p{
+  font-size: 1.4rem;
+  color: chocolate;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.dog-food, .cat-food{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:2rem 0;
+}
+.dog-food, .cat-food, .image{
+  flex: 1 1 40rem;
+}
+.dog-food, .cat-food, .image img{
+  width: 100%;
+}
+.content{
+  flex: 1 1 40rem;
+  text-align: center;
+  padding: 2rem;
+}
+.content h3 {
+  font-size: 3.5rem;
+  color: black;
+}
+
+.content h3 span{
+  color: brown;
+}
+.content p{
+  padding: 1rem 0;
+  line-height: 2;
+  color: brown;
+  font-size: 1.6rem;
+
+}
+.amount{
+  font-size: 3.5rem;
+  color: black;
+  padding: .5rem 0;
+}
