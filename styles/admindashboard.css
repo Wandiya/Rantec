@@ -307,5 +307,8 @@ tbody tr td {
    width: 100%;
    margin: 8px 0;
   } 
+  .board{
+    margin: 30px 15px 30px 15px; 
+  }
 }
 
