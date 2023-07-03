@@ -1,54 +1,44 @@
-let loginForm = document.querySelector('.header .login-form');
-let navbar = document.querySelector('.header .navbar');
 
-document.querySelector('.login-btn').onclick = () => {
-  loginForm.classList.toggle('active'); 
-  navbar.classList.remove('active'); 
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
 }
 
-document.querySelector('#menu-btn').onclick = () => {
-  navbar.classList.toggle('active'); 
-  loginForm.classList.remove('active'); 
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
 }
 
-window.onscroll = () => {
-  loginForm.classList.remove('active'); 
-  navbar.classList.remove('active'); 
+/***  REMOVE MENU MOBILE ************/
+const navLink = document.querySelectorAll('.nav__link')
 
-  window.onscroll = () => {
-    if (window.scrollY > 0) {
-      document.querySelector('.header').classList.add('active');
-    } else {
-      document.querySelector('.header').classList.remove('active');
-    }
-  }
-};
-  
-  window.onload = () => {
-    if (window.scrollY > 0) {
-      document.querySelector('.header').classList.add('active');
-    } else {
-      document.querySelector('.header').classList.remove('active');
-    }
-  };
-  
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// let loginForm = document.querySelector('.header .login-form');
+/***  QUESTIONS ACCORDION ************/
 
-// document.querySelector('.login-btn').onclick = () => {
-//   loginForm.classList.toggle('active'); 
-//   navbar.classList.remove('active'); 
-// }
 
-// let navbar = document.querySelector('.header .navbar');
+/***  CHANGE BACKGROUND HEADER ************/
 
-// document.querySelector('#menu-btn').onclick = () => {
-//   navbar.classList.toggle('active'); 
-//   loginForm.classList.remove('active'); 
-    
-// }
 
-// window.onscroll = () => {
-//   loginForm.classList.remove('active'); 
-//   navbar.classList.remove('active'); 
-// }
+/***  SCROLL SECTIONS ACTIVE LINK ************/
+
+
+/***  SHOW SCROLL TOP ************/
+
+
+/***  DARK LIGHT THEME ************/

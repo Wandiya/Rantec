@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rantec | landing page</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rantec | Landing Page </title>
+
+  
+    <!-- favicon icon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon/home-icon.png">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,119 +24,108 @@
       rel="stylesheet"
     />
 
-    <!-- font awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="styles/landing-page.css" />
-  </head>
+    <link rel="stylesheet" href="styles/landing-page.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <i class="fa-solid fa-leaf nav__logo-icon"></i> Plantex
+      </a>
+      <div class="nav__menu show-menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#faqs" class="nav__link">FAQS</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
 
-  <body>
-    <!-- header section starts here -->
-    <header class="header">
-      <a href="#" class="logo"><i class="fas fa-paw">shop</i></a>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">about</a>
-        <a href="#shop">shop</a>
-        <a href="#services">services</a>
-        <a href="#plan">plan</a>
-        <a href="#contact">contact</a>
-      </nav>
-
-      <div class="icons">
-        <div class="fas fa-bars" id="menu-btn"></div>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <div class="fas fa-user" id="login-btn"></div>
-      </div>
-      <form action="" class="login-form">
-        <h3>sign in</h3>
-        <input
-          type="email"
-          name=""
-          placeholder="enter your email"
-          id=""
-          class="box"
-        />
-        <input
-          type="password"
-          name=""
-          placeholder="enter your email"
-          id=""
-          class="box"
-        />
-        <div class="remember">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me">Remember me</label>
+        <div class="nav__close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <input type="submit" value="sign in" class="btn" />
-        <div class="links">
-          <a href="#">Forget password</a>
-          <a href="#">sign up</a>
-        </div>
-      </form>
-    </header>
-    <!-- header section ends here -->
-
-    <!-- home section starts here -->
-    <section class="home" id="home">
-      <div class="content">
-        <h3><span>Hi</span> Welcome to our pet shop</h3>
-        <a href="#" class="btn">Shop now</a>
-      </div>
-      <!-- <img src="images/landing-img" class="wave" alt=""> -->
-    </section>
-    <!-- home section ends here -->
-    <!-- about section starts here -->
-    <section class="about" id="about">
-      <div class="image">
-        <img src="images/landing-img/sheep.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>premium <span>Livestock foods</span> manufacturers</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-        <a href="#" class="btn">read more</a>
       </div>
 
-    </section>
-    <!-- about section ends here -->
-
-    <!-- dog and cats food baner section starts here -->
-
-  <div class="dog-food">
-    <div class="image">
-    <img src="images/landing-img/goats.jpg" alt="">
-    </div>
-  <div class="content">
-  <h3><span>Air dried</span> dog food</h3>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed perspiciatis quo animi? Adipisci laudantium explicabo, nobis sit et dignissimos nam neque veritatis.</p>
-  <div class="amount">$15.00 - $30.00</div>
-  <a href="#"><img src="images/landing-img/sheep.jpg" alt=""></a>
-  </div>
-
-    </div>
-  <div class="content">
-  <h3><span>Air dried</span> dog food</h3>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed perspiciatis quo animi? Adipisci laudantium explicabo, nobis sit et dignissimos nam neque veritatis.</p>
-<div class="amount">$15.00 - $30.00</div>
-  <a href="#"><img src="images/landing-img/sheep.jpg" alt=""></a>
-  </div>
-  <div class="cat-food">
-      <div class="image">
-      <img src="images/landing-img/goats.jpg" alt="">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
       </div>
-    </div>
+    </nav>
+  </header>
+  <main class="main">
+<!--**************** Home *************************-->
+<section class="home" id="home">
+<div class="home__container container grid">
+<img src="images/landing-img/flower-pot1.png" class="home__img" alt="">
 
-    <!-- dog and cats food baner section ends here -->
+<div class="home__data">
+<h1 class="home__title">
+  plants will make <br> your life better
+</h1>
+ <p class="home__description">
+  create incredible plant design for your office 
+  add freshness to your new ideas.
+ </p>
+ <a href="#about" class="button button--flex">
+  Explore <i class="fa-solid fa-arrow-down-right"></i>
+ </a>
+</div>
 
+<div class="home__socials">
+  <span class="home__social-follow">Follow Us</span>
+  
+  <div class="home__social-links">
+    <a href="https://www.facebook.com" target="_blank" class="home__social-links">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="htpps://www.instagram.com"target="_blank" class="home__social-links">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="htpps://www.twitter.com" target="_blank"class="home__social-links">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
     
+  </div>
 
-    <!-- custom js link -->
-    <script src="scripts/landing-page.js"></script>
-  </body>
+</div>
+</div>
+
+</section>
+
+<!--******************* About ********************-->
+<section class="about section container" id="about">
+
+</section>
+<!--******************* Steps ********************-->
+<section class="steps section container">
+  
+</section>
+
+<!--******************* products ********************-->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer section">
+
+  </footer>
+
+  <!-- SCROLL UP -->
+
+  <!-- SCROLL REVEAL -->
+  <script src="scripts/landing-page.js"></script>
+</body>
 </html>
