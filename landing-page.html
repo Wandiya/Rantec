@@ -22,6 +22,10 @@
 
   <!-- font awesome icons link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- boxicons link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="styles/landing-page.css">
 </head>
@@ -31,12 +35,12 @@
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
-        <i class="fa-solid fa-leaf nav__logo-icon"></i> Rantec
+        <i class="fa-solid fa-cow"></i> Rantec
       </a>
       <div class="nav__menu show-menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#home" class="nav__link active-link">Home</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
@@ -77,7 +81,7 @@
             add freshness to your new ideas.
           </p>
           <a href="#about" class="button button--flex">
-            Explore <i class="fa-solid fa-arrow-down-right button__icon"></i>
+            Explore <i class='bx bx-right-top-arrow-circle'></i>
           </a>
         </div>
 
@@ -340,7 +344,7 @@
       </div>
     </section>
 
-    <!--******************* Contacts ********************-->
+    <!--******************* CONTACTS ********************-->
     <section class="contact section container" id="contact">
       <div class="contact__container grid">
         <div class="contact__box">
@@ -348,22 +352,123 @@
             Reach out to us today <br> via any of the given information
           </h2>
 
-          <div class="contact__data">
-            
+        <div class="contact__data">
+          <div class="contact__information">
+            <h3 class="contact__subtitle">Call us for instant support</h3>
+            <span class="contact__description">
+              <i class="fa-solid fa-phone contact__icon"></i>
+              +2347039240447
+            </span>
+          </div>
+
+          <div class="contact__information">
+            <h3 class="contact__subtitle">Message us for instant support</h3>
+            <span class="contact__description">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+              user@gmail.com 
+            </span>
           </div>
         </div>
       </div>
+      <form action="" class="contact__form">
+        <div class="contact__inputs">
+          <div class="contact__content">
+            <input type="email" placeholder="" class="contact__input" required>
+            <label for="" class="contact__label">Email</label>
+          </div>
 
+          <div class="contact__content">
+            <input type="email" placeholder="" class="contact__input" required>
+            <label for="" class="contact__label">Subject</label>
+          </div>
+
+          <div class="contact__content contact__area" >
+            <textarea name="Message"  placeholder=""  class="contact__input"></textarea>
+            
+            <label for="" class="contact__label">Message</label>
+          </div>
+           
+        </div>
+        <button class="button button--flex">
+          Send Message <i class='bx bx-right-top-arrow-circle'></i>
+        </button>
+      </form>
+
+    </div>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <i class="fa-solid fa-cow"></i> Rantec
+        </a>
 
+        <h3 class="footer__title">
+          Subscribe to our newsletter <br> to stay Update
+        </h3>
+
+        <div class="footer__subscribe">
+          <input type="email" placeholder="Enter your email" class="footer__input" required>
+          <button class="button button--flex footer__button">
+            Subscribe
+            <i class='bx bx-right-top-arrow-circle'></i></i>
+          </button>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Our Address</h3>
+
+        <ul class="footer__data">
+           <li class="footer__information">Rayfield</li>
+           <li class="footer__information">Bukuru</li>
+           <li class="footer__information">123-456-789</li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Contact Us</h3>
+
+        <ul class="footer__data">
+           <li class="footer__information"><i class="fa-solid fa-phone"></i>+2347080043999<li> 
+
+            <div class="footer__socials">
+              <a href="https://www.facebook.com/" class="footer__socials-link">
+                <i class='bx bxl-facebook-circle footer__logo-icon' ></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__socials-link">
+                <i class='bx bxl-instagram footer__logo-icon' ></i>
+              </a>
+              <a href="https://www.twitter.com/" class="footer__socials-link"><i class="fa-brands fa-twitter footer__logo-icon"></i>
+              </a>
+              <a href="https://www.whatsapp.com/" class="footer__socials-link">
+                <i class="fa-brands fa-whatsapp footer__logo-icon"></i>
+              </a>
+            </div>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Credit cards</h3>
+
+       <div class="footer__cards">
+        <img src="images/landing-img/card1.svg" alt="">
+        <img src="images/landing-img/card2.svg" alt="">
+        <img src="images/landing-img/card3.svg" alt="">
+        <img src="images/landing-img/card4.svg" alt="">
+       </div>
+      </div>
+    </div>
+
+    <p class="footer__copy">&copy; Rantec. All rights reserved</p>
   </footer>
 
   <!-- SCROLL UP -->
-
+<a href="#" class="scrollup" id="scroll-up">
+  <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+</a>
   <!-- SCROLL REVEAL -->
   <script src="scripts/landing-page.js"></script>
 </body>
