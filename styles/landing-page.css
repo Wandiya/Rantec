@@ -881,6 +881,7 @@ z-index: 10;
 .home{
   padding: 10rem;
 }
+
 .home__container{
   align-items: center;
 }
@@ -894,9 +895,92 @@ z-index: 10;
 .questions__container{
   align-items: flex-start;
 }
+.footer__container{
+  column-gap: 3rem;
 }
-/* For Desktop/large devices */
+.footer__subscribe{
+  width: initial;
+}
+}
 
+/* For Desktop/large devices */
+@media screen and (min-width:992px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding: 8rem 0 1rem;
+  }
+  .section__title, .section__title-center{
+    font-size: var(--h1-font-size);
+  }
+  .home{
+
+    padding: 13rem 0 5rem;
+  }
+  .home__img{
+    width: 350px;
+  }
+  .home__description{
+    padding-right: 7rem;
+  }
+  .about__img{
+    width: 380px;
+  }
+  .steps__container{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .steps__bg{
+    padding: 3.5rem 2.5rem;
+  }
+
+  .steps__card-title{
+    font-size: var(--normal-font-size);
+  }
+
+  .product__description{
+    padding: 0 16rem;
+  }
+  .product__container{
+    padding: 4rem 0;
+    grid-template-columns: repeat(3, 185px);
+    gap: 4rem 6rem;
+  }
+
+  .product__img{
+    width: 200px;
+  }
+
+  .product__circle{
+    width: 10px;
+    height: 10px;
+  }
+  .product__title, .product__price{
+    font-size: var(--normal-font-size);
+  }
+
+  .questions__container{
+    padding: 1rem 0 4rem;
+  }
+  .questions__title {
+    text-align: initial;
+  }
+
+  .questions__group{
+    row-gap: 2rem;
+    column-gap: 3rem;
+  }
+  .questions__header{
+    padding: 1rem;
+  }
+  .questions__description{
+    padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+
+  .footer___
+}
 
  /***** show scroll up *****/
  
