@@ -313,6 +313,8 @@ body.dark-theme{
 
 .home__description{
   margin-bottom: var(--mb-2-5);
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 .home__socials{
@@ -385,6 +387,7 @@ column-gap: .5rem;
 .button--link{
   color: var(--first-color);
   font-weight: var(--font-medium);
+
 }
 .button--link:hover .button__icon{
   transform: translate3d(.25rem);
@@ -392,6 +395,7 @@ column-gap: .5rem;
 /**************************** ABOUT *******************/
 .about__container{
   row-gap: 2rem;
+  background: whitesmoke;
 }
 .about__img{
   width: 200px;
@@ -404,17 +408,19 @@ column-gap: .5rem;
 
 .about__description{
   margin-bottom: var(--mb-2);
+  font-size: 18px;
 }
 
 .about__details{
   display: grid;
   row-gap: 1rem;
   margin-bottom: var(--mb-2-5);
+  
 }
 .about__details-description{
   display: inline-flex;
   column-gap:.5rem;
-  font-size: var(--small-font-size);
+  font-size: 15px;
 }
 .about__details-icon{
   font-size: 1rem;
@@ -454,11 +460,11 @@ column-gap: .5rem;
 }
 
 .steps__card-title{
-  font-size: var(--h3-font-size);
-margin-bottom: var(--mb-0-5);
+  font-size: 20px;
+  margin-bottom: var(--mb-0-5);
 }
 .steps__card-description{
-  font-size: var(--small-font-size); 
+  font-size: 18px; 
 }
 .steps__card:hover .steps__card-number{
   transform: translateY(-.25rem);
@@ -467,6 +473,7 @@ margin-bottom: var(--mb-0-5);
 /************************** PRODUCTS *******************/
 .product__description{
   text-align: center;
+  font-size: 18px;
 }
 
 .product__container{
@@ -530,15 +537,16 @@ margin-bottom: var(--mb-0-5);
 /************************** QUESTIONS *******************/
 
 .questions{
-  background-color: var(--first-color-lighten);
+  background-color: #8ab8a2;
 }
 .questions__container{
-  gap: 1.5rem 0;
+  gap: 2.5rem 0;
 }
 
 .questions__group{
   display: grid;
-  row-gap: 1.5rem;
+  row-gap: 2rem;
+  
 }
  
 .questions__item{
@@ -630,6 +638,11 @@ margin-bottom: var(--mb-0-5);
   display: grid;
   row-gap: 2rem;
   margin-bottom: var(--mb-2-5); 
+  
+  /* font-family: 'Inter', sans-serif; */
+}
+.contact__label{
+  font-size: 20px;
 }
 
 .contact__content{
@@ -642,19 +655,20 @@ margin-bottom: var(--mb-0-5);
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  padding: 1rem 1rem 1rem 0;
+  /* height: 100%; */
+  /* padding: 1rem 1rem 1rem 0; */
   background: none;
   border: none;
   outline: none;
   z-index: 1;
+  border-bottom: 1px solid black;
  }
 
  .contact__label{
   position: absolute;
   top: 0.75rem;
   width: 100%;
-  font-size: var(--small-font-size);
+  font-size: 20px;
   color: var(--text-color-light);
   transition: .3s;
  }
@@ -678,11 +692,19 @@ z-index: 10;
  /***** input focus sticky top label *****/
  input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
 top: -.75rem;
-font-size: var(--smaller-font-size);
+font-size: 20px;
 z-index: 10;
  }
  
  /************* FOOTER***************/
+ .footer{
+  background:#8ab8a2;
+  /* background-color: #fff; */
+ }
+ .footer__content{
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+ }
 .footer__container{
   row-gap: 3rem;
 }
@@ -691,7 +713,7 @@ z-index: 10;
   display: inline-flex;
   align-items: center; 
   column-gap: .5rem;
-  color: var(--title-color);
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
@@ -700,8 +722,8 @@ z-index: 10;
 }
 
 .footer__logo-icon{
-  font-size: 1.15rem;
-  color: var(--first-color);
+  font-size: 2.15rem;
+  color: white;
 }
 
 .footer__logo:hover{
@@ -738,7 +760,11 @@ z-index: 10;
   row-gap: .75rem;
 }
 .footer__information{
-  font-size: var(--small-font-size);
+  /* font-size: var(--normal-font-size); */
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
 }
 .footer__socials{
   display: inline-flex;
@@ -818,7 +844,7 @@ z-index: 10;
     margin-right: var(--mb-1);
   }
   .home__img{
-    width: 180px;
+    width: 200px;
   }
   .home__title{
     font-size: var(--h1-font-size);
@@ -968,7 +994,7 @@ z-index: 10;
   }
 
   .questions__group{
-    row-gap: 2rem;
+    /* row-gap: 2rem; */
     column-gap: 3rem;
   }
   .questions__header{
