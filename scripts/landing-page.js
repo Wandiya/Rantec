@@ -130,7 +130,7 @@ themeButton.addEventListener('click', () => {
 })
 
 /***  SCROLL REVEAL ANIMATION ************/
-const sr =scrrollRevwal ({
+const sr = scrrollRevwal ({
     origin:'top',
     distance: '60px',
     duration: 2500,
