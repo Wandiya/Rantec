@@ -97,8 +97,8 @@ button{
 }
 
 h1,h2,h3{
-  color: #fff;
-  font-weight: var(--font-semi-bold);
+  color:var(--title-color);
+  font-weight: 500;
 }
 
 ul{
@@ -110,7 +110,7 @@ a{
 }
 
 img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 /****THEME STYLES ****/
@@ -140,7 +140,7 @@ body.dark-theme{
 }
 /** color changes in some parts of the websites, in dark theme */
 .dark-theme .steps__bg{
-  background-color: var(--first-color);
+  background-color: var(--first-color-dark);
 }
 .dark-theme .product__circle, 
 .dark-theme .footer__subscribe{
@@ -159,7 +159,7 @@ body.dark-theme{
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-2);
   line-height: 140%;
-  color: #fff;
+  color: var(--first-color)
 }
 
 .section__title-center{
@@ -167,7 +167,7 @@ body.dark-theme{
 }
 
 .container{
-  max-width: 998px; 
+  max-width: 999px; 
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1);
   gap: 1rem;
@@ -257,12 +257,14 @@ body.dark-theme{
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  font-size: 16px;
 }
 
 .nav__link{
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: .3s;
+  
 }
 
 .nav__link:hover{
@@ -301,6 +303,7 @@ body.dark-theme{
 .home__container{
   position: relative;
   row-gap: 2rem;
+  /* background: #233d63; */
 }
 
 .home__img{
@@ -534,7 +537,7 @@ column-gap: .5rem;
 .product__circle{
   /* width: 90px;
   height: 90px; */
-  /* background-color: var(--first-color-lighten); */
+  background-color: var(--first-color-lighten); 
   border-radius: 50%;
   position: absolute;
   top: 18%;
@@ -547,7 +550,7 @@ column-gap: .5rem;
 /************************** QUESTIONS *******************/
 
 .questions{
-  background-color: #8ab8a2;
+  background-color:var(--first-color-light);
 }
 .questions__container{
   gap: 2.5rem 0;
@@ -558,8 +561,6 @@ column-gap: .5rem;
 .questions__group{
   display: grid;
   row-gap: 2rem;
-  
-  
 }
  
 .questions__item{
@@ -599,7 +600,7 @@ column-gap: .5rem;
 }
 
 .questions__item:hover{
-  box-shadow: 0 2px 8px hsla(var(--hue), 41%, 15%, .15 );
+  box-shadow: 0 2px 8px hsla(var(--hue), 41%, 15%, .15);
 }
 
 
@@ -727,7 +728,7 @@ z-index: 10;
   display: inline-flex;
   align-items: center; 
   column-gap: .5rem;
-  color: white;
+  color: var(--title-color);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
@@ -737,7 +738,7 @@ z-index: 10;
 
 .footer__logo-icon{
   font-size: 2.15rem;
-  color: white;
+  color: var(--first-color);
 }
 
 .footer__logo:hover{
@@ -767,7 +768,7 @@ z-index: 10;
 
 .footer__button{
   padding: 1rem;
-}
+} 
 
 .footer__data{
   display: grid;
@@ -955,7 +956,7 @@ z-index: 10;
   }
   .section__title, .section__title-center{
     font-size: var(--h1-font-size);
-    color: #233d63;
+    color: var(--first-color);
   }
   .home{
 
