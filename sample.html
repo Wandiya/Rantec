@@ -1,253 +1,90 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <style>
-    .box {
-      width: 200px;
-      height: 100px;
-      border: 1px solid black;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+/* Universal styles */
+/* ... */
 
-    .left-align {
-      text-align: left;
-    }
-
-    .right-align {
-      text-align: right;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <div class="left-align">Total number of cows:</div>
-    <div class="right-align">100</div>
-  </div>
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-gap: 10px;
-      width: 500px;
-      height: 150px;
-    }
-
-    .box {
-      border: 1px solid black;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background:#000;
-    }
-
-    .left-align {
-      text-align: left;
-    }
-
-    .right-align {
-      text-align: right;
-    }
-    .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 300px;
-  height: 50px;
-  background-color: lightblue;
-  margin-bottom: 5px;
-  margin-inline: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* gap: 10px; */
-  padding: 5px;
-}
-
-.box .left {
-  text-align: left;
-}
-
-.box .right {
-  text-align: right;
-}
+/* Content styles */
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
 .box {
-  width: calc(33.33% - 10px);
-  height: 150px;
-  background-color: lightblue;
-  margin-bottom: 10px;
+  width: 45%;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  position: relative;
-}
-
-.box-extra {
-  background-color: lightgreen;
-}
-
-.box .left {
-  text-align: left;
-}
-
-.box .right {
-  text-align: right;
-}
-
-.box::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-  background-color: transparent;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
-  animation: sparkle 2s infinite;
-}
-
-@keyframes sparkle {
-  0% {
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8), 0 0 30px 6px rgba(255, 255, 255, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .box {
-    width: calc(50% - 10px);
-  }
-}
-
- /* chat continue */
- /* .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: calc(33.33% - 10px);
-  height: 150px;
-  background-color: lightblue;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 5px;
   padding: 10px;
 }
 
-.box-extra {
-  background-color: lightgreen;
+.top-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box .left {
-  text-align: left;
+.bottom-align {
+  text-align: center;
+  font-weight: bold;
+  color: #888;
 }
 
-.box .right {
-  text-align: right;
-} */
+.left-align {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
 
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-align img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries */
 @media screen and (max-width: 768px) {
   .box {
-    width: calc(50% - 10px);
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  /* .box {
-    width: calc(50% - 10px);
-  } */
+@media screen and (max-width: 480px) {
+  .box {
+    height: 250px;
+  }
 }
 
-  </style>
+</style>  
 </head>
 <body>
-  <div class="grid-container">
-    <div class="box">
-      <div class="left-align">Total number of cows:</div>
-      <div class="right-align">100</div>
-    </div>
-    <div class="box">
-      <div class="left-align">Total number of cows:</div>
-      <div class="right-align">100</div>
-    </div>
-    <div class="box">
-      <div class="left-align">Total number of cows:</div>
-      <div class="right-align">100</div>
-    </div>
-    <!-- Repeat the above box divs to create the grid -->
-    
-  </div>
-  <div class="container">
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-  </div>
   
-  <!-- chat continue -->
-  <div class="container">
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
+  <div class="box">
+    <div class="top-align">
+      <div class="left-align">Total no of cows: 50</div>
     </div>
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
+    <div class="center-align">
+      <img src="path/to/image.jpg" alt="Cow Image">
     </div>
-    <div class="box">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-    <div class="box box-extra">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-    <div class="box box-extra">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
-    <div class="box box-extra">
-      <div class="left">Total No of Sheep</div>
-      <div class="right">50</div>
-    </div>
+    <div class="bottom-align">Group A</div>
   </div>
   
   
-  
-  
+
+
+
+
 </body>
-</html>
+</html>  
+
