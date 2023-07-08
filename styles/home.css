@@ -1,9 +1,12 @@
+/* universal styles */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+/* body styles */
 body{
   width: 100%;
   background: url(../images/livestock-bg.png);
@@ -13,10 +16,12 @@ body{
   position: relative;
   display: flex;
 }
+
 body img{
   opacity: 0.6;
 }
 
+/* menu styles */
 #menu{
   background: #111827;
   width: 300px;
@@ -74,6 +79,8 @@ color: #fff;
   font-weight: 300px;
   transition: .3s ease;
 }
+
+/* interface styles */
 #interface{
   width: 80%;
   margin-left: 300px;
@@ -136,11 +143,14 @@ font-weight: 400;
 }
 .i-name{
   color:#fff;
-  padding: 40px 30px 0 30px;
+  padding: 40px 30px 10px 30px;
   font-size:24px;
   font-weight: 700;
   margin-top: 70px;
 }
+
+
+/**************************** content styles ******************************/
 .values {
   padding: 20px 0px 0 20px;
   display: grid;
@@ -205,6 +215,8 @@ font-weight: 400;
   animation: sparkle 2s infinite;
 }
 
+
+/************************* keyframes styles ********************************/
 @keyframes sparkle {
   0% {
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
@@ -218,6 +230,7 @@ font-weight: 400;
   }
 }
 
+/**************************** container styles*********************/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -255,7 +268,7 @@ font-weight: 400;
 
 
 
-/* Apply sparkle effect to .val-box and .box classes */
+/********************* Apply sparkle effect to .val-box and .box classes ****************************/
 .val-box::before,
 .box::before {
   content: "";
@@ -283,7 +296,7 @@ font-weight: 400;
   }
 }
 
-/* Apply different colors to .val-box icons */
+/**************************** Apply different colors to .val-box icons ****************************/
 .values .val-box:nth-child(1) .right-align i {
   background: #7874ec;
 }
@@ -326,7 +339,7 @@ font-weight: 400;
   color: #2b2b2b;
 } */
 
-
+/* ****************************** Media query **************************************/
  @media (max-width:769px){
   #menu{
     width: 270px;
@@ -368,6 +381,7 @@ font-weight: 400;
   }
 }
 
+/*  Mobile devices */
 /* Other CSS code... */
 
 @media screen and (max-width: 480px) {
@@ -400,7 +414,7 @@ font-weight: 400;
   }
 }
 
-/* Other CSS code... */
+/*  Mobile devices */
 
 @media (max-width:477px){
   #interface .navigation{
