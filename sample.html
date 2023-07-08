@@ -1,23 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample</title>
-  <link rel="stylesheet" href="styles/sample.css">
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-align {
+      text-align: left;
+    }
+
+    .right-align {
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-
-<div class="cardBox">
-  <div class="card">
-    <div>
-      <div class="numbers">1,504</div>
-      <div class="cardName">daily guys</div>
-    </div>
-    <div class="iconBox">
-      
-    </div>
+  <div class="box">
+    <div class="left-align">Total number of cows:</div>
+    <div class="right-align">100</div>
   </div>
-</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 10px;
+      width: 500px;
+      height: 150px;
+    }
+
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background:#000;
+    }
+
+    .left-align {
+      text-align: left;
+    }
+
+    .right-align {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box">
+      <div class="left-align">Total number of cows:</div>
+      <div class="right-align">100</div>
+    </div>
+    <div class="box">
+      <div class="left-align">Total number of cows:</div>
+      <div class="right-align">100</div>
+    </div>
+    <div class="box">
+      <div class="left-align">Total number of cows:</div>
+      <div class="right-align">100</div>
+    </div>
+    <!-- Repeat the above box divs to create the grid -->
+  </div>
 </body>
 </html>

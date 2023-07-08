@@ -142,33 +142,72 @@ font-weight: 400;
   margin-top: 70px;
 }
 .values{
-  padding: 30px 30px 0 30px;
+  padding: 20px 0px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+  width: 900px;
+  height: 150px;
+
+  /* justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row;  */
+} 
+  .val-box{
+  border: 1px solid #ccc;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  /* flex-direction: row; */
-}
-.values .val-box{
   background: #fff;
+  border-radius: 5px;
+  /* background: #fff;
   width: 235px;
-  padding: 16px 20px;
+ padding: 16px 20px; 
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  flex-direction: row; */
+}
+
+.left-align{
+  text-align: left;
+   
+}
+.right-align{
+  text-align: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .values .val-box i {
-  font-size: 25px;
+  /* font-size: 25px;
   width: 60px;
   height: 60px;
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
   color: #fff;
-  /* background: #000; */
-  margin-right: 15px;
+  background: #000; 
+  margin-right: 15px; */
+}
+.val-price { 
+  /* margin-left: 5rem;
+  margin-top: ;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background: #000;
+  color: #fff; */
 }
 .values .val-box:nth-child(1) i{
 background: #7874ec;
@@ -186,7 +225,7 @@ background: #74daec;
   font-size: 18px;
   color:#828997;
 }
-
+/* 
 .board{
   width: 95%;
   margin: 30px 0 30px 30px;
@@ -248,9 +287,9 @@ tbody tr td {
   font-size: 14px;
   color: #554cd1;
   font-weight: 600;
-}
+} */
 
-@media (max-width:769px){
+/* @media (max-width:769px){
   #menu{
     width: 270px;
     height: 100%; 
@@ -321,4 +360,4 @@ tbody tr td {
     margin: 30px 15px 30px 15px; 
   }
 }
-
+ */

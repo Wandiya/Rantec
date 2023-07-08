@@ -1,15 +1,16 @@
 
-const navMenu = document.getElementById('menu-btn'),
-navToggle = document.getElementById('active'),
-navClose = document.getElementById('.menu')
+const navMenu = document.getElementById('menu-btn');
+const navToggle = document.getElementById('active');
+const navClose = document.getElementById('menu');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('active')
-    })
+if (navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('active');
+    });
 }
+
 // document.addEventListener('click', function(event) {
 // const target = event.target;
 // if (target.classList.contains('menu-btn')) {
