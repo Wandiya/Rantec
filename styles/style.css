@@ -97,7 +97,7 @@ button{
 }
 
 h1,h2,h3{
-  color:var(--title-color);
+  color:  #fff;;
   font-weight: 500;
 }
 
@@ -119,8 +119,8 @@ img{
 /****** Variables Dark theme ****/
 body.dark-theme{
 --first-color-dark:hsl(var(--hue),8%, 20%); 
---title-color:hsl(var(--hue), 4%, 95%) ;
---text-color:hsl(var(--hue), 4%, 75%); 
+--title-color:hsl(var(--hue), 4%, 95%);
+--text-color:#fff; 
 --body-color: hsl(var(--hue), 8%, 12%);
 --container-color:hsl(var(--hue), 8%, 16%); 
 }
@@ -131,6 +131,7 @@ body.dark-theme{
   color:var(--title-color);
   font-size: 1.15rem;
   cursor: pointer;
+  
 }
 
 .nav__btns {
@@ -452,9 +453,10 @@ column-gap: .5rem;
 }
 
 .steps__title{
-  color: #fff;
+  color:var(--first-color);
   font-weight: 600;
 }
+
 .steps__card{
   background-color: var(--container-color);
   padding: 2.5rem 3rem 2rem 1.5rem;
@@ -713,8 +715,7 @@ z-index: 10;
  
  /************* FOOTER***************/
  .footer{
-  background:#8ab8a2;
-  /* background-color: #fff; */
+  background:#011c39
  }
  .footer__content{
   font-size: 20px;
@@ -775,8 +776,7 @@ z-index: 10;
   row-gap: .75rem;
 }
 .footer__information{
-  /* font-size: var(--normal-font-size); */
-  color: black;
+  color: #fff;;
   font-weight: 500;
   font-size: 20px;
   font-family: 'Inter', sans-serif;
@@ -955,8 +955,9 @@ z-index: 10;
     padding: 8rem 0 1rem;
   }
   .section__title, .section__title-center{
+    margin-top: 1rem;
     font-size: var(--h1-font-size);
-    color: var(--first-color);
+    /* color: var(--first-color); */
   }
   .home{
 
