@@ -112,7 +112,7 @@ font-size: 14px;
   align-items: center;
 }
 #interface .navigation .profile i{
-margin-right: 20px;
+margin-right: 22px;
 font-size: 19px;
 font-weight: 400;
 }
@@ -136,48 +136,50 @@ font-weight: 400;
 }
 .i-name{
   color:#fff;
-  padding: 120px 30px 0 30px;
+  padding: 40px 30px 0 30px;
   font-size:24px;
   font-weight: 700;
   margin-top: 70px;
 }
-.values{
+.values {
   padding: 20px 0px 0 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 15px;
-  width: 900px;
-  height: 150px;
-
-  /* justify-content: space-between;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  /* flex-direction: row;  */
-} 
-  .val-box{
-  border: 1px solid #ccc;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 600px;
+  height: 100px;
+  margin-bottom: 3.4rem;
+}
+.val-box ,
+.box {
+  border: none; /* Remove the border */
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  border-radius: 5px;
-  /* background: #fff;
-  width: 235px;
- padding: 16px 20px; 
-  border-radius: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row; */
+  border-radius: 20px;
+  border: 1px solid transparent;
 }
 
-.left-align{
-  text-align: left;
-   
+.val-box,
+.box {
+  border: 1px solid transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
 }
-.right-align{
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
   text-align: right;
   width: 40px;
   height: 40px;
@@ -188,108 +190,144 @@ font-weight: 400;
   justify-content: center;
   align-items: center;
 }
-.values .val-box i {
-  /* font-size: 25px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
-  background: #000; 
-  margin-right: 15px; */
+
+.val-box::before,
+.box::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: transparent;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  animation: sparkle 2s infinite;
 }
-.val-price { 
-  /* margin-left: 5rem;
-  margin-top: ;
-  width: 60px;
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8),
+      0 0 30px 6px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 278px;
   height: 60px;
-  text-align: center;
-  border-radius: 50%;
+  background-color: #fff;
+  margin: 30px 10px 10px 10px;
+  gap: 5px;
+  margin-inline-start: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.box .left {
+  text-align: left;
+}
+
+.box .right {
+  text-align: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
   background: #000;
-  color: #fff; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.values .val-box:nth-child(1) i{
-background: #7874ec;
+
+
+
+/* Apply sparkle effect to .val-box and .box classes */
+.val-box::before,
+.box::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: transparent;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  animation: sparkle 2s infinite;
 }
-.values .val-box:nth-child(2) i{
-background:#000;
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8),
+      0 0 30px 6px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
 }
-.values .val-box:nth-child(3) i{
-background: #e45099;
+
+/* Apply different colors to .val-box icons */
+.values .val-box:nth-child(1) .right-align i {
+  background: #7874ec;
 }
-.values .val-box:nth-child(4) i{
-background: #74daec;
+
+.values .val-box:nth-child(2) .right-align i {
+  background: #fff;
 }
-.values .val-box h3{
+
+.values .val-box:nth-child(3) .right-align i {
+  background: #e45099;
+}
+
+.values .val-box:nth-child(4) .right-align i {
+  background: #74daec;
+}
+
+.values .val-box h3 {
   font-size: 18px;
-  color:#828997;
+  color: #828997;
+}
+.active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  background-color: #d7fada;
+  border-radius: 4px;
+  color: #2b2b2b;
+}
+
+.i-name {
+  margin-top: 60px;
 }
 /* 
-.board{
-  width: 95%;
-  margin: 30px 0 30px 30px;
-  overflow: auto;
-  background: #fff;
-  border-radius: 8px;
-}
-
-.board img{
-  width: 45px;
-  height: 45px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-.board h5{
-  font-weight: 600;
-  font-size: 14px;
-
-}
-.board p{
-  font-weight: 400;
-  font-size: 13px;
-  color: #787d8d;
-}
-.board .people{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-  text-align: start;
-}
-table{
-  border-collapse: collapse;
-}
-tr{
-  border-bottom: 1px solid #eef0f3;
-}
-thead td{
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 400;
-  background: #f9fafb;
-  text-align: start;
-  padding: 15px;
-}
-tbody tr td {
-  padding: 10px 15px;
-}
 .active p{
   background: #d7fada;
   padding: 2px 10px;
   display: inline-block; 
   border-radius: 40px;
   color: #2b2b2b;
-}
-
-.edit a{
-  text-decoration: none;
-  font-size: 14px;
-  color: #554cd1;
-  font-weight: 600;
 } */
 
-/* @media (max-width:769px){
+
+ @media (max-width:769px){
   #menu{
     width: 270px;
     height: 100%; 
@@ -317,24 +355,52 @@ tbody tr td {
   #interface .navigation{
     width: 100%;
   }
-  .values{
-    padding: 30px 30px 0 30px;
-    justify-content: flex-start;
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 10px);
   }
-  .values .val-box{
-    padding: 16px 20px;
-    margin: 10px 20px 10px 0;
-  }
-  .board{
-    width: 92%;
-    overflow-x: auto;
-    padding: 0;
-  }
-  table{
-    width: 100%;
-    border-collapse: collapse;
+  .values .val-box {
+    width: calc(50% - 10px);
   }
 }
+
+/* Other CSS code... */
+
+@media screen and (max-width: 480px) {
+  .values {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .val-box,
+  .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .val-box {
+    display: block;
+  }
+
+  .val-box .left-align,
+  .val-box .right-align {
+    text-align: center;
+  }
+
+  .val-box .right-align {
+    margin-top: 10px;
+  }
+
+  .box-extra {
+    margin-bottom: 4rem;
+  }
+}
+
+/* Other CSS code... */
 
 @media (max-width:477px){
   #interface .navigation{
@@ -344,20 +410,7 @@ tbody tr td {
    width: 150px; 
     }
    .i-name{
-     
-      padding: 30px 15px 0 15px;
-     
-  }
-  .values{
-    padding: 15px 15px 0 15px;
-    
-  }
-  .values .val-box{
-   width: 100%;
-   margin: 8px 0;
-  } 
-  .board{
-    margin: 30px 15px 30px 15px; 
+      padding: 30px 15px 0 15px;  
   }
 }
- */
+

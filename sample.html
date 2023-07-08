@@ -58,6 +58,132 @@
     .right-align {
       text-align: right;
     }
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 50px;
+  background-color: lightblue;
+  margin-bottom: 5px;
+  margin-inline: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 5px;
+}
+
+.box .left {
+  text-align: left;
+}
+
+.box .right {
+  text-align: right;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: calc(33.33% - 10px);
+  height: 150px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.box-extra {
+  background-color: lightgreen;
+}
+
+.box .left {
+  text-align: left;
+}
+
+.box .right {
+  text-align: right;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: transparent;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8), 0 0 30px 6px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 10px);
+  }
+}
+
+ /* chat continue */
+ /* .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: calc(33.33% - 10px);
+  height: 150px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.box-extra {
+  background-color: lightgreen;
+}
+
+.box .left {
+  text-align: left;
+}
+
+.box .right {
+  text-align: right;
+} */
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .box {
+    width: calc(50% - 10px);
+  } */
+}
+
   </style>
 </head>
 <body>
@@ -75,6 +201,53 @@
       <div class="right-align">100</div>
     </div>
     <!-- Repeat the above box divs to create the grid -->
+    
   </div>
+  <div class="container">
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+  </div>
+  
+  <!-- chat continue -->
+  <div class="container">
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box box-extra">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box box-extra">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+    <div class="box box-extra">
+      <div class="left">Total No of Sheep</div>
+      <div class="right">50</div>
+    </div>
+  </div>
+  
+  
+  
+  
 </body>
 </html>
