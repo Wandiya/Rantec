@@ -1,84 +1,67 @@
  <!DOCTYPE html>
 <html>
 <head>
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-/* Universal styles */
-/* ... */
-
-/* Content styles */
-.container {
+.row {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 45%;
-  height: 200px;
-  background-color: #f2f2f2;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.top-align {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom-align {
-  text-align: center;
-  font-weight: bold;
-  color: #888;
 }
 
 .left-align {
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
+  text-align: left;
 }
 
 .center-align {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.center-align img {
-  max-width: 100%;
-  height: auto;
+.right-align {
+  text-align: right;
 }
 
-/* Media queries */
-@media screen and (max-width: 768px) {
-  .box {
-    width: 100%;
-  }
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
 }
 
-@media screen and (max-width: 480px) {
-  .box {
-    height: 250px;
-  }
+.number {
+  margin-right: 5px;
 }
+
+.add-number {
+  padding: 5px 10px;
+  background-color: #888;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
 
 </style>  
 </head>
 <body>
   
-  <div class="box">
-    <div class="top-align">
-      <div class="left-align">Total no of cows: 50</div>
+  <div class="row">
+    <div class="left-align">
+      <i class="fa-solid fa-arrow-left"></i>
     </div>
     <div class="center-align">
-      <img src="path/to/image.jpg" alt="Cow Image">
+      Group A
     </div>
-    <div class="bottom-align">Group A</div>
+    <div class="right-align">
+      <div class="dot"></div>
+      <span class="number">7</span>
+      <button class="add-number">Add Number</button>
+    </div>
   </div>
+  
   
   
 
