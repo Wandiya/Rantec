@@ -292,14 +292,10 @@ font-weight: 400;
   background: #fff;
   border-radius: 8px;
 }
-
-/* .board img{
-  width: 45px;
-  height: 45px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 15px;
-} */
+a{
+  text-decoration: none;
+  color: #000;
+}
 .board h5{
   font-weight: 600;
   font-size: 14px;
