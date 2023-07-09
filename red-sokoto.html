@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rantec | Red Sokoto </title>
+  
+    <!-- favicon icon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon/dashboard-icon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles/red-sokoto.css" />
+<!-- Jquery link  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<section id="menu">
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+    <h2>Rantec</h2>
+  </div>
+  <div class="items">
+    <li>
+      <i class="fa-solid fa-chart-pie"></i><a href="admindashboard.html">Dashboard</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-house"></i><a href="home.html">Home</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-user-doctor"></i><a href="#">Veterinary</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-cart-shopping"></i><a href="#">Booking</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-cow"></i><a href="livestock.html">Livestock</a>
+    </li>
+    <!-- <li>
+      <i class="fa-solid fa-address-card"></i><a href="#">About Us</a>
+    </li> -->
+
+    <li>
+      <i class="fa-solid fa-tent-arrow-left-right"></i><a href="policy-page.html">Privacy Policy</a>
+    </li>
+  </div>
+</section>
+  <section id="interface">
+    <div class="navigation">
+      <div class="n1">
+        <div>
+          <i  id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search">
+        </div>
+      </div>
+      <div class="profile">
+        <i class="fa-regular fa-bell"></i>
+        <img src="images/james.jpg" alt="">
+      </div>
+
+    </div>
+    <!-- row markup starts here -->
+    <div class="row">
+      <div class="left-align">
+       <a href="livestock-1.html"><i class="fa-solid fa-arrow-left"></i> </a>
+      </div>
+      <div class="center-align">
+       <h4> Group B </h4> 
+      </div>
+      <div class="right-align">
+        <div class="dot"></div>
+        <span class="number">7</span>
+        <button id="add-number-btn">Add Number</button>
+      </div>
+     
+  <div class="form-popup" id="number-form">
+  <form>
+    <label for="sex-input">Sex:</label>
+    <input type="text" id="sex-input" placeholder="Enter sex" required>
+    
+    <label for="id-input">ID:</label>
+    <input type="text" id="id-input" placeholder="Enter ID" required>
+    
+    <div class="form-buttons">
+      <button type="submit" id="submit-btn">Submit</button>
+      <button type="button" id="close-btn">Close</button>
+    </div>
+  </form>
+</div>
+<!-- row markup ends here -->
+    </div>
+    <div class="values"></div>
+
+    <!-- Board markup starts here -->
+  <div class="board">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Number</td>
+          <td>Breed</td>
+          <td>Sex</td>
+          <td>ID</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>1</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-B.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>2</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520DD</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>3</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>F</p></td>
+
+          <td class="ro le">
+            <p>520FE</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>4</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>F</p></td>
+
+          <td class="role">
+            <p>524AD</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>5</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>6</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520AD</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>7</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>F</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>8</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>F</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>9</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>10</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"><h5>Red Sokoto</h5> </a>
+          </td>
+          <td class="active"><p>M</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+          <td class="people">
+            <div class="people-des">
+              <h5>11</h5>
+            </div>
+          </td>
+
+          <td class="people-des">
+            <a href="group-A.html"> <h5>Limousin Cattle</h5> </a>
+          </td>
+          <td class="active"><p>F</p></td>
+
+          <td class="role">
+            <p>520SG</p>
+          </td>
+
+          <td class="edit"><a href="#">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+  <!-- row markup ends here -->
+  <!-- script file  -->
+  <script src="scripts/limousin.js"></script>
+</body>
+</html>

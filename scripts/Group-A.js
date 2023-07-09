@@ -1,28 +1,11 @@
-// Get the elements
-const addNumberBtn = document.getElementById('add-number-btn');
-const formPopup = document.getElementById('number-form');
-
-// Add event listener to the button
-addNumberBtn.addEventListener('click', () => {
-  formPopup.style.display = 'block'; // Show the form pop-up
+document.getElementById("scanButton").addEventListener("click", function() {
+  var modal = document.getElementById("qrCodeModal");
+  var qrCodeImage = document.getElementById("qrCodeImage");
+  qrCodeImage.src = "path/to/your/qr-code-image.png";
+  modal.style.display = "block";
 });
 
-// Close the form when the "Close" button is clicked
-document.getElementById('close-btn').addEventListener('click', () => {
-  formPopup.style.display = 'none'; // Hide the form pop-up
-});
-
-// Submit the form when the "Submit" button is clicked
-document.getElementById('submit-btn').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent form submission (for demo purposes)
-  
-  // Get the input values
-  const sex = document.getElementById('sex-input').value;
-  const id = document.getElementById('id-input').value;
-  
-  // Perform further processing or submit the form data
-  
-  // Reset the form
-  document.getElementById('number-form').reset();
-  formPopup.style.display = 'none'; // Hide the form pop-up
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  var modal = document.getElementById("qrCodeModal");
+  modal.style.display = "none";
 });
