@@ -152,16 +152,18 @@ font-weight: 400;
 }
 
 .center-align {
-  /* padding: 0; */
   border: none;
   background: none;
   font-size: 18px;
   font-weight: 400;
-  border-bottom: 3px solid #000;
   cursor: pointer;
   padding: 5px 10px;
   background-color: #7874ec;
   border-radius: 4px;
+}
+.center-align h4:hover{
+  border-bottom: 2px solid #000;
+  color: #d7dbe6;
 }
 
 
@@ -192,6 +194,18 @@ font-weight: 400;
   font-weight: 400;
 }
 
+button{
+  background: #45a049;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+button:hover{
+  color: #f9fafb;
+}
+
 /* form starts here  */
 .form-popup {
   display: none;
@@ -204,6 +218,7 @@ font-weight: 400;
   border-radius: 5px;
   z-index: 9999;
 }
+
 /* dark bg*/
 .form-popup {
   background-color: #222;
@@ -249,12 +264,13 @@ font-weight: 400;
 #number-form button:hover {
   background-color: #45a049;
 }
+
 #submit-btn,
 #close-btn {
   margin-inline: 10px;
 }
 
-
+/* keyframes styles  */
 @keyframes sparkle {
   0% {
     opacity: 1;
@@ -285,6 +301,8 @@ font-weight: 400;
 }
 
 /* form ends here  */
+
+/* board styles  */
 .board{
   width: 95%;
   margin: 30px 0 30px 30px;
@@ -312,17 +330,37 @@ a{
   align-items: center; 
   text-align: start;
 }
+
 table{
   border-collapse: collapse;
 }
 tr{
   border-bottom: 1px solid #eef0f3;
+  color: #000;
+  font-size: 16px;
 }
+tr:nth-child(2){
+  background: #787d8d;
+}
+tr:nth-child(4){
+  background: #787d8d;
+}
+tr:nth-child(6){
+  background: #787d8d;
+}
+tr:nth-child(8){
+  background: #787d8d;
+}
+tr:nth-child(10){
+  background: #787d8d;
+}
+
 thead td{
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  background: #f9fafb;
+  background: #554cd1;
+  color: #f9fafb;
   text-align: start;
   padding: 15px;
 }
@@ -344,6 +382,7 @@ tbody tr td {
   font-weight: 600;
 }
 
+/* Media Query Desktop size */
 @media (max-width:769px){
   #menu{
     width: 270px;
@@ -391,6 +430,7 @@ tbody tr td {
   }
 }
 
+/* Media Query Mobile size */
 @media (max-width:477px){
   #interface .navigation{
     padding: 15px;
