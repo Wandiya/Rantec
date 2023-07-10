@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rantec| Dashboard</title>
+  
+    <!-- favicon icon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon/dashboard-icon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles/booking.css" />
+<!-- Jquery link  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<section id="menu">
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+    <h2>Rantec</h2>
+  </div>
+  <div class="items">
+    <li>
+      <i class="fa-solid fa-chart-pie"></i><a href="admindashboard.html">Dashboard</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-house"></i><a href="home.html">Home</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-user-doctor"></i><a href="livestock-1.html">Veterinary</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-cart-shopping"></i><a href="booking.html">Booking</a>
+    </li>
+    <!-- <li>
+      <i class="fa-solid fa-cow"></i><a href="livestock.html">Livestock</a>
+    </li> -->
+    <!-- <li>
+      <i class="fa-solid fa-address-card"></i><a href="#">About Us</a>
+    </li> -->
+    <li>
+      <i class="fa-solid fa-tent-arrow-left-right"></i><a href="#">Privacy Policy</a>
+    </li>
+  </div>
+</section>
+  <section id="interface">
+    <div class="navigation">
+      <div class="n1">
+        <div>
+          <i  id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search">
+        </div>
+      </div>
+      <div class="profile">
+        <i class="fa-regular fa-bell"></i>
+        <img src="images/james.jpg" alt="">
+      </div>
+
+    </div>
+    <h3 class="i-name">
+      BOOKING
+    </h3>
+    <div class="status-box">
+      <div class="left-align">Upcoming</div>
+      <div class="center-align">Pending</div>
+      <div class="right-align">New</div>
+    </div>
+    
+    <form class="form-container">
+      <div class="form-row">
+        <label for="livestock-type">Livestock Type:</label>
+        <input type="text" id="livestock-type" name="livestock-type">
+      </div>
+    
+      <div class="form-row">
+        <label for="group">Group:</label>
+        <input type="text" id="group" name="group">
+      </div>
+    
+      <div class="form-row">
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number">
+      </div>
+    
+      <div class="form-row">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id">
+      </div>
+    
+      <div class="form-row">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+      </div>
+    
+      <div class="form-row">
+        <label for="symptoms">Symptoms:</label>
+        <textarea id="symptoms" name="symptoms"></textarea>
+      </div>
+    
+      <div class="form-row">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+   
+
+  </div>
+  </section>
+  <script src="scripts/booking.js"></script>
+</body>
+</html>
