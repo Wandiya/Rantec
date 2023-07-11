@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Rantec| Dashboard</title>
+  <title> Rantec| Booking </title>
   
     <!-- favicon icon -->
     <link rel="shortcut icon" type="image/jpg" href="images/favicon/dashboard-icon.png">
@@ -26,7 +26,7 @@
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="styles/booking.css" />
+    <link rel="stylesheet" href="styles/new-page.css" />
 <!-- Jquery link  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
@@ -81,40 +81,40 @@
       BOOKING
     </h3>
     <div class="status-box">
-      <div class="left-align">Upcoming</div>
-      <div class="center-align">Pending</div>
-      <div class="right-align">New</div>
+      <div class="left-align"><a href="upcoming.html">Upcoming </a></div>
+      <div class="center-align"><a href="pending.html"> Pending</a></div>
+      <div class="right-align"><a href="new-page.html"> New </a></div>
     </div>
     
     <form class="form-container">
       <div class="form-row">
         <label for="livestock-type">Livestock Type:</label>
-        <input type="text" id="livestock-type" name="livestock-type">
+        <input type="text" id="livestock-type"  placeholder="Enter type of livestock" name="livestock-type">
       </div>
     
       <div class="form-row">
         <label for="group">Group:</label>
-        <input type="text" id="group" name="group">
+        <input type="text" id="group" placeholder="Enter Group Type" name="group">
       </div>
     
       <div class="form-row">
         <label for="number">Number:</label>
-        <input type="text" id="number" name="number">
+        <input type="text" id="number" placeholder="Enter Number" name="number">
       </div>
     
       <div class="form-row">
         <label for="id">ID:</label>
-        <input type="text" id="id" name="id">
+        <input type="text" id="id" placeholder="Enter ID" name="id">
       </div>
     
       <div class="form-row">
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
+        <input type="date" id="date"  placeholder="Select Date"name="date">
       </div>
     
       <div class="form-row">
         <label for="symptoms">Symptoms:</label>
-        <textarea id="symptoms" name="symptoms"></textarea>
+        <textarea id="symptoms" name="symptoms" placeholder="Describe the symptoms"></textarea>
       </div>
     
       <div class="form-row">
