@@ -80,38 +80,57 @@
 
     </div>
     <!-- qr-code mark up -->
-    <div class="container">
+     <!-- qr-code mark up -->
+     <div class="container">
       <div class="left-align">
-        <div class="arrow"><a href="red-sokoto.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+        <div class="arrow"><a href="red-sokoto.html"><i class="fa-solid fa-arrow-left"></i> </a></div>
       </div>
       <div class="center-align">
         <h3>Group B</h3>
       </div>
       <div class="right-align">
+        <button id="addButton" id="addButton">Add</button>
         <button id="scanButton">Click to Scan</button>
       </div>
     </div>
     <div id="qrCodeModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <img id="qrCodeImage" src="" alt="QR Code">
+        <img id="qrCodeImage" src="images/qr-code.png" alt="QR Code">
       </div>
     </div>
     
     </div>
-    <!-- <div class="qr-space">
-    <h3 class="i-name">
-      Livestocks
-    </h3>
-    <img src="images/tabler_scan.png" alt="">
-  </div> -->
+    
+     <!-- Form container with hidden form content -->
+<div class="form-container" id="formContainer">
+  <div class="form-content">
+    <span class="close">&times;</span>
+    <form>
+      <label for="vetName">Veterinary Name:</label>
+      <input type="text" id="vetName" name="vetName"  placeholder="Enter your name"required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" placeholder="select Date"required>
+
+      <label for="diseaseName">Disease Name:</label>
+      <input type="text" id="diseaseName" name="diseaseName" placeholder="Enter the Disease Name" required>
+
+      <label for="cause">Cause:</label>
+      <input type="text" id="cause" name="cause" placeholder="Type the cause of Disease " required>
+
+      <label for="vaccine">Vaccine:</label>
+      <input type="text" id="vaccine" name="vaccine" placeholder="Type  Name of vaccine" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+    </div>
     <div class="values">
       <div class="val-box">
         Animal Profile
       </div>
-
-      
-      
   
   </div>
    <div class="board">

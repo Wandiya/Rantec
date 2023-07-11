@@ -38,9 +38,6 @@
     <h2>Hi Ahmad</h2>
   </div>
   <div class="items">
-    <!-- <li>
-      <i class="fa-solid fa-chart-pie"></i><a href="admindashboard.html">Dashboard</a>
-    </li> -->
     <li>
       <i class="fa-solid fa-house"></i><a href="home.html">Home</a>
     </li>
@@ -53,13 +50,7 @@
     <li>
       <i class="fa-solid fa-cow"></i><a href="livestock.html">Livestock</a>
     </li>
-    <!-- <li>
-      <i class="fa-solid fa-address-card"></i><a href="#">About Us</a>
-    </li>
-
-    <li>
-      <i class="fa-solid fa-tent-arrow-left-right"></i><a href="#">Privacy Policy</a>
-    </li> -->
+   
   </div>
 </section>
   <section id="interface">
@@ -88,6 +79,7 @@
         <h3>Group A</h3>
       </div>
       <div class="right-align">
+        <button id="addButton" id="addButton">Add</button>
         <button id="scanButton">Click to Scan</button>
       </div>
     </div>
@@ -99,19 +91,35 @@
     </div>
     
     </div>
-    <!-- <div class="qr-space">
-    <h3 class="i-name">
-      Livestocks
-    </h3>
-    <img src="images/tabler_scan.png" alt="">
-  </div> -->
+    
+     <!-- Form container with hidden form content -->
+<div class="form-container" id="formContainer">
+  <div class="form-content">
+    <span class="close">&times;</span>
+    <form>
+      <label for="vetName">Veterinary Name:</label>
+      <input type="text" id="vetName" name="vetName"  placeholder="Enter your Name"required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="diseaseName">Disease Name:</label>
+      <input type="text" id="diseaseName" name="diseaseName" placeholder="Enter the Disease Name" required>
+
+      <label for="cause">Cause:</label>
+      <input type="text" id="cause" name="cause" placeholder="Type the Cause of Disease" required>
+
+      <label for="vaccine">Vaccine:</label>
+      <input type="text" id="vaccine" name="vaccine"  placeholder="Enter the vaccine Name "required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
     <div class="values">
       <div class="val-box">
         Animal Profile
       </div>
-
-      
-      
   
   </div>
    <div class="board">

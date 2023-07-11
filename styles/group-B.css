@@ -135,25 +135,27 @@ font-weight: 400;
   margin-top: 70px;
 }
 
+/* container styles */
 .container {
-  padding: 80px 20px 0 20px;
+  padding: 100px 20px 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 20px; */
 }
 
 .left-align {
   text-align: left;
 }
-h3{
+
+h3 {
   width: 100px;
   height: 30px;
   background: #7874ec;
   color: #000;
   border-radius: 5px;
 }
-h3:hover{
+
+h3:hover {
   color: #fff;
 }
 
@@ -166,6 +168,15 @@ h3:hover{
 }
 
 #scanButton {
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addButton {
   padding: 10px 20px;
   background-color: #2b2b2b;
   color: #fff;
@@ -209,23 +220,96 @@ h3:hover{
   height: auto;
 }
 
-/* form ends here  */
-/* .qr-space{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* Styling for the form container */
+.form-container {
+display: none;
+position: fixed;
+z-index: 9999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.6);
 }
-.qr-space img{
-  margin-top: 3rem;
-  padding: 40px 30px 0 20px;
-  flex: none;
-  align-self: flex-end;
-  padding-right: 2rem;
-  object-fit: cover;
-  width: 10%;
-  height: 10%;
 
-} */
+/* Styling for the form content */
+.form-content {
+background-color: #fff;
+margin: 15% auto;
+padding: 20px;
+border-radius: 5px;
+width: 300px;
+text-align: center;
+position: relative;
+}
+
+/* Styling for the form close button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* Styling for the form inputs */
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+label {
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+width: 100%;
+padding: 10px;
+border: 2px solid #eee;
+border-radius: 5px;
+font-size: 14px;
+}
+
+button[type="submit"] {
+padding: 10px 20px;
+background-color: #2b2b2b;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+/* Styling for sparkle effect */
+button[type="submit"]:before {
+content: "";
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+transform: rotate(45deg);
+pointer-events: none;
+opacity: 0;
+transition: opacity 0.5s;
+z-index: -1;
+}
+
+button[type="submit"]:hover:before {
+opacity: 1;
+}
+
+
+/* form ends here  */
+
 .values{
   padding: 30px 30px 0 30px;
   display: flex;
@@ -397,6 +481,9 @@ tbody tr td {
 
   .right-align {
     margin-top: 10px;
+  }
+  .form-content {
+    width: 80%;
   }
 }
 
