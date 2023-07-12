@@ -401,11 +401,10 @@ font-weight: 400;
 
 @media screen and (max-width: 768px) {
   .box {
-    width: calc(50% - 10px);
+    width: 100%;
+    margin: 10px 0;
   }
-  .values .val-box {
-    width: calc(50% - 10px);
-  }
+ 
 }
 @media screen and (max-width: 480px) {
   .values {
@@ -484,15 +483,6 @@ font-weight: 400;
  
 }
 
-
-@media screen and (max-width: 768px) {
-  .box {
-    width: calc(50% - 10px);
-  }
-  .values .val-box {
-    width: calc(50% - 10px);
-  }
-}
 
 /*  Mobile devices */
 /* Other CSS code... */
