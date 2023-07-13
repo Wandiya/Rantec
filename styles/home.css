@@ -367,6 +367,212 @@ font-weight: 400;
   border-radius: 40px;
   color: #2b2b2b;
 } 
+
+/* prifle styles */
+.profile {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+.profile .dropdown-content {
+display: none;
+position: absolute;
+background-color: #333;
+min-width: 200px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+padding: 8px 0;
+border-radius: 4px;
+right: 0;
+left: auto;
+color: #fff;
+top: calc(100% + 5px);
+
+}
+
+.profile:hover .dropdown-content {
+display: block;
+}
+
+
+/* .profile .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 8px 0;
+  border-radius: 4px;
+  right: 0;
+  left: auto;
+  color: #fff;
+} */
+
+.profile .dropdown-content .profile-info {
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.profile .dropdown-content .full-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile .dropdown-content .email {
+  font-size: 14px;
+  color: #888;
+}
+
+.profile .dropdown-content a {
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.profile .dropdown-content a i {
+  margin-right: 10px;
+}
+
+.profile .dropdown-content a.logout:hover {
+  background-color: #b9a6a6;
+}
+
+.profile .dropdown-content a:hover {
+  background-color: #645e5e;
+}
+
+/* .profile:hover .dropdown-content {
+  display: block;
+} */
+
+.profile .dropdown-content a.password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.profile .dropdown-content a.password::after {
+  content: "••••••••••••••";
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile .dropdown-content::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(#ffffff00, #ffffff, #ffffff00);
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  animation: sparkle 1.5s infinite ease-in-out;
+}
+
+.profile .dropdown-content .sparkles {
+position: absolute;
+bottom: -15px;
+left: 0;
+width: 100%;
+height: 30px;
+overflow: hidden;
+pointer-events: none;
+}
+
+.profile .dropdown-content .sparkles span {
+position: absolute;
+width: 5px;
+height: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 50%;
+animation: none; /* Remove the 'bubble' animation */
+}
+
+
+/* .profile .dropdown-content .sparkles {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+
+.profile .dropdown-content .sparkles span {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: bubble 4s infinite;
+} */
+
+.profile .dropdown-content .sparkles span:nth-child(1) {
+  left: 60%;
+  height: 20px;
+  width: 20px;
+  animation-duration: 5s;
+}
+
+.profile .dropdown-content .sparkles span:nth-child(2) {
+  left: 40%;
+  height: 15px;
+  width: 15px;
+  animation-duration: 4s;
+}
+
+.profile .dropdown-content .sparkles span:nth-child(3) {
+  left: 100%;
+  height: 20px;
+  width: 20px;
+  animation-duration: 10s;
+}
+
+.profile .dropdown-content a.logout {
+  display: flex;
+  align-items: center;
+}
+
+.profile .dropdown-content a.logout i {
+  margin-right: 10px;
+}
+
+.profile .profile-btn {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.profile .profile-btn img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.profile .profile-btn i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+/* prifle styles ends here */
+
+
  @media (max-width:769px){
   #menu{
     width: 270px;

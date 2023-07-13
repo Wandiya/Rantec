@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Rantec| Limousin </title>
+  <title> Rantec | Limousin Cattle </title>
   
-    <!-- favicon icon -->
+    <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/jpg" href="images/favicon/dashboard-icon.png">
 
-    <!-- google fonts -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,370 +23,390 @@
       rel="stylesheet"
     />
 
-    <!-- font awesome link -->
+    <!-- Font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" href="styles/limousin.css" />
-<!-- Jquery link  -->
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="styles/angus.css" />
+  <!-- Jquery link  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
-<section id="menu">
-  <div class="logo">
-    <img src="images/logo.png" alt="">
-    <h2>Rantec</h2>
-  </div>
-  <div class="items">
-    <li>
-      <i class="fa-solid fa-chart-pie"></i><a href="admindashboard.html">Dashboard</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-house"></i><a href="home.html">Home</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-user-doctor"></i><a href="livestock-1.html">Veterinary</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-cart-shopping"></i><a href="new-page.html">Booking</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-cow"></i><a href="livestock-1.html">Livestock</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-tent-arrow-left-right"></i><a href="policy-page.html">Privacy Policy</a>
-    </li>
-  </div>
+  <section id="menu">
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+      <h2>Rantec</h2>
+    </div>
+    <div class="items">
+      <li>
+        <i class="fa-solid fa-chart-pie"></i><a href="admindashboard.html">Dashboard</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-house"></i><a href="home.html">Home</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-user-doctor"></i><a href="livestock-1.html">Veterinary</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-cart-shopping"></i><a href="new-page.html">Booking</a>
+      </li>
   
-  <!-- Interface section starts here -->
-</section>
-  <section id="interface">
-    <div class="navigation">
-      <div class="n1">
-        <div>
-          <i  id="menu-btn" class="fa-solid fa-bars"></i>
-        </div>
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="search">
-        </div>
-      </div>
-      <div class="profile">
-        <i class="fa-regular fa-bell"></i>
-        <img src="images/james.jpg" alt="">
-      </div>
-
+      <li>
+        <i class="fa-solid fa-tent-arrow-left-right"></i><a href="policy-page.html">Privacy Policy</a>
+      </li>
     </div>
-    <!-- row markup starts here -->
-    <div class="row">
-      <div class="left-align">
-       <a href="livestock-1.html"> <i class="fa-solid fa-arrow-left"></i> </a>
-      </div>
-      <div class="center-align">
-       <h4> Group A</h4> 
-      </div>
-      <div class="right-align">
-        <div class="dot"></div>
-        <span class="number">7</span>
-        <button id="add-number-btn">Add Number</button>
-      </div>
-     
-  <div class="form-popup" id="number-form">
-  <form>
-    <label for="sex-input">Sex:</label>
-    <input type="text" id="sex-input" placeholder="Enter sex" required>
-    
-    <label for="id-input">ID:</label>
-    <input type="text" id="id-input" placeholder="Enter ID" required>
-    
-    <div class="form-buttons">
-      <button type="submit" id="submit-btn">Submit</button>
-      <button type="button" id="close-btn">Close</button>
-    </div>
-  </form>
-</div>
-<!-- row markup ends here -->
-    </div>
-    <div class="values"></div>
-
-    <!-- Board markup starts here -->
-  <div class="board">
-    <table width="100%">
-      <thead>
-        <tr>
-          <td>Number</td>
-          <td>Breed</td>
-          <td>Sex</td>
-          <td>ID</td>
-          <td>View</td>
-          <td></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>1</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-           <a href="group-A.html"> 
-            <i class="fa-solid fa-eye"></i>
-          </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>2</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520DD</p>
-          </td>
-
-          <td class="role">
-          <a href="group-A.html">  
-            <i class="fa-solid fa-eye"></i>
-          </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>3</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-            <h5>Limousin Cattle</h5>
-          </td>
-          <td class="active"><p>F</p></td>
-
-          <td class="ro le">
-            <p>520FE</p>
-          </td>
-
-          <td class="role">
-           <a href="group-A.html"> 
-            <i class="fa-solid fa-eye"></i>
-          </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>4</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5>
-          </td>
-          <td class="active"><p>F</p></td>
-
-          <td class="role">
-            <p>524AD</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-            <i class="fa-solid fa-eye"></i>
-          </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>5</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-            <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>6</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520AD</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-        <tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>7</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5>
-          </td>
-          <td class="active"><p>F</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>8</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>F</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>9</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-             <h5>Limousin Cattle</h5> 
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>10</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-            Limousin Cattle</h5>
-          </td>
-          <td class="active"><p>M</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-          <td class="people">
-            <div class="people-des">
-              <h5>11</h5>
-            </div>
-          </td>
-
-          <td class="people-des">
-            <h5>Limousin Cattle</h5>
-          </td>
-          <td class="active"><p>F</p></td>
-
-          <td class="role">
-            <p>520SG</p>
-          </td>
-
-          <td class="role">
-            <a href="group-A.html">
-              <i class="fa-solid fa-eye"></i>
-            </a>
-          </td>
-
-          <td class="edit"><a href="#">Edit</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
   </section>
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div>
+            <i  id="menu-btn" class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search">
+          </div>
+        </div>
+        <div class="profile">
+          <i class="fa-regular fa-bell"></i>
+          <button class="profile-btn">
+            <!-- <i class="fa-regular fa-bell"></i> -->
+            <img src="images/james.jpg" alt="">
+          </button>
+          
+          <div class="dropdown-content">
+            <div class="profile-info">
+              <h5 class="full-name">James Wandiya</h5>
+              <p class="email">jameswandiya@gmail.com</p>
+            </div>
+            <a href="#" class="edit-picture">Change Picture</a>
+            <a href="#" class="password">Password</a>
+            <a href="index.html"><i class="fa-solid fa-sign-out"></i>Logout</a>
+            <div class="sparkles">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="profile">
+          <i class="fa-regular fa-bell"></i>
+          <img src="images/james.jpg" alt="">
+        </div> -->
+  
+      </div>
+      <!-- row markup starts here -->
+      <div class="row">
+        <div class="left-align">
+         <a href="livestock-1.html"><i class="fa-solid fa-arrow-left"></i> </a>
+        </div>
+        <div class="center-align">
+         <h4> Group A </h4> 
+        </div>
+        <div class="right-align">
+          <div class="dot"></div>
+          <span class="number">7</span>
+          <button id="add-number-btn">Add Number</button>
+        </div>
+       
+    <div class="form-popup" id="number-form">
+    <form>
+      <label for="sex-input">Sex:</label>
+      <input type="text" id="sex-input" placeholder="Enter sex" required>
+      
+      <label for="id-input">ID:</label>
+      <input type="text" id="id-input" placeholder="Enter ID" required>
+      
+      <div class="form-buttons">
+        <button type="submit" id="submit-btn">Submit</button>
+        <button type="button" id="close-btn">Close</button>
+      </div>
+    </form>
+  </div>
   <!-- row markup ends here -->
-  <!-- script file  -->
-  <script src="scripts/limousin.js"></script>
+      </div>
+      <div class="values"></div>
+  
+      <!-- Board markup starts here -->
+    <div class="board">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Number</td>
+            <td>Breed</td>
+            <td>Sex</td>
+            <td>ID</td>
+            <td>VIEW</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>1</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>920AD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>2</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>920DD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>3</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>F</p></td>
+  
+            <td class="ro le">
+              <p>920SG</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>4</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>F</p></td>
+  
+            <td class="role">
+              <p>920FE</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>5</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>924AD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>6</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>920AD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>7</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>F</p></td>
+  
+            <td class="role">
+              <p>920AD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>8</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>F</p></td>
+  
+            <td class="role">
+              <p>920AD</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>9</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>520SG</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>10</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+              <h5>Limousin Cattle</h5>
+            </td>
+            <td class="active"><p>M</p></td>
+  
+            <td class="role">
+              <p>520SG</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+            <td class="people">
+              <div class="people-des">
+                <h5>11</h5>
+              </div>
+            </td>
+  
+            <td class="people-des">
+               <h5>Limousin Cattle</h5> 
+            </td>
+            <td class="active"><p>F</p></td>
+  
+            <td class="role">
+              <p>520SG</p>
+            </td>
+  
+            <td class="role">
+              <a href="group-A.html">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </td>
+  
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <!-- row markup ends here -->
+    <!-- script file  -->
+    <script src="scripts/limousin.js"></script>
 </body>
 </html>

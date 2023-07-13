@@ -10,6 +10,30 @@ openFormBtn.addEventListener('click', () => {
 });
 
 
+/* Dropdown Content */
+document.addEventListener("DOMContentLoaded", function() {
+  const editLink = document.querySelector(".edit-picture");
+  const fileInput = document.createElement("input");
+  fileInput.type = "file";
+
+  editLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    fileInput.click();
+  });
+
+  fileInput.addEventListener("change", function() {
+    const file = fileInput.files[0];
+    const profileImage = document.querySelector(".profile img");
+
+    const reader = new FileReader();
+    reader.onload = function() {
+      profileImage.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+});
+
+
 // const openFormBtn = document.getElementById('open-form-btn');
 // const livestockForm = document.getElementById('livestock-form');
 

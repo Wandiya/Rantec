@@ -3,14 +3,45 @@
   document.getElementById("scanButton").addEventListener("click", function() {
     const modal = document.getElementById("qrCodeModal");
     const qrCodeImage = document.getElementById("qrCodeImage");
-    qrCodeImage.src = "images/qrCode.png";
+    const imageSource = "images/qr-code.svg"; // Replace with the actual image file path
+  
+    // Get the file extension from the image source
+    const fileExtension = imageSource.split('.').pop().toLowerCase();
+  
+    // Check if the file extension is SVG
+    if (fileExtension === 'svg') {
+      // Load SVG using the object element
+      qrCodeImage.innerHTML = `<object data="${imageSource}" type="image/svg+xml"></object>`;
+    } else {
+      // Load other image formats (PNG, JPG, etc.) using the img element
+      qrCodeImage.innerHTML = `<img src="${imageSource}" alt="QR Code">`;
+    }
+  
     modal.style.display = "block";
   });
-
+  
   document.getElementsByClassName("close")[0].addEventListener("click", function() {
     const modal = document.getElementById("qrCodeModal");
+    const qrCodeImage = document.getElementById("qrCodeImage");
+    
+    // Reset the image source and innerHTML
+    qrCodeImage.src = "";
+    qrCodeImage.innerHTML = "";
+  
     modal.style.display = "none";
   });
+  
+  // document.getElementById("scanButton").addEventListener("click", function() {
+  //   const modal = document.getElementById("qrCodeModal");
+  //   const qrCodeImage = document.getElementById("qrCodeImage");
+  //   qrCodeImage.src = "images/qrCode.png";
+  //   modal.style.display = "block";
+  // });
+
+  // document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  //   const modal = document.getElementById("qrCodeModal");
+  //   modal.style.display = "none";
+  // });
 
   /*========================Event listener for addButton and formContainerm=====================*/
   const addButton = document.getElementById('addButton');

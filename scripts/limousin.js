@@ -26,3 +26,30 @@ document.getElementById('submit-btn').addEventListener('click', (event) => {
   document.getElementById('number-form').reset();
   formPopup.style.display = 'none'; // Hide the form pop-up
 });
+
+/*************************** Dropdown Content **********************/
+document.addEventListener("DOMContentLoaded", function() {
+  const editLink = document.querySelector(".edit-picture");
+  const fileInput = document.createElement("input");
+  fileInput.type = "file";
+
+  editLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    fileInput.click();
+  });
+
+  fileInput.addEventListener("change", function() {
+    const file = fileInput.files[0];
+    const profileImage = document.querySelector(".profile-btn img");
+
+    // Perform file upload logic here
+    // You can use AJAX or other methods to upload the file to the server
+
+    // For demonstration purposes, update the profile image source with the selected file
+    const reader = new FileReader();
+    reader.onload = function() {
+      profileImage.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+});
