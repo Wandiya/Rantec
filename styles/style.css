@@ -22,8 +22,8 @@
 --h1-font-size:1.5rem;
 --h2-font-size:1.25rem;
 --h3-font-size:1rem;
---normal-font-size:.938rem;
---small-font-size:.813rem;
+--normal-font-size:1rem;
+--small-font-size:.913rem;
 --smaller-font-size:.75rem;
 
 
@@ -60,7 +60,7 @@
 --h2-font-size: 1.5rem;
 --h3-font-size: 1.25rem;
 --normal-font-size: 1rem;
---small-font-size:.875rem;
+--small-font-size:2.8rem;
 --smaller-font-size:.813rem;
 
   }
@@ -71,6 +71,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html{
@@ -581,7 +582,7 @@ column-gap: .5rem;
   color: var(--title-color);
 }
 .questions__description{
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   padding: 0 1.25rem 1.15rem 2.5rem;
 }
 .questions__header{
