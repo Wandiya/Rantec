@@ -55,6 +55,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 /* sidebar starts here */
@@ -63,7 +64,7 @@
   top: 60px;
   width: 260px;
   height: calc(100% - 60px) ;
-  background: #299863;
+  background: #253047;
   overflow-x: hidden;
 }
 .sidebar ul{

@@ -2,9 +2,9 @@ var ctx = document.getElementById('doughnut').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['Academic', 'Non-academic', 'Adminstration', 'others'],
+        labels: ['Psoriasis', 'Brucellosis', 'Bovine Respiratory', 'foot rot'],
         datasets: [{
-            label: 'Employees',
+            label: 'Diseases',
             data: [47, 17, 8, 6],
             backgroundColor: [
                 'rgba(41, 155, 99, 1)',
